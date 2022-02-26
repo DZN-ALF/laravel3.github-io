@@ -8,7 +8,7 @@ use App\Models\User;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\PesanController;
-use App\Http\Controllers\ProsesController;
+use App\Http\Controllers\KonfirmasiController;
 
 
 /*
@@ -40,7 +40,7 @@ Route::get('/Blogs', function () {
 
 Route::get('/pesan', [PesanController::class, 'index']); 
 
-Route::post('/proses', [ProsesController::class, 'index']);
+Route::post('/konfirmasi', [KonfirmasiController::class, 'index']);
 
 Route::get('/login', [LoginController::class, 'index']);
 
